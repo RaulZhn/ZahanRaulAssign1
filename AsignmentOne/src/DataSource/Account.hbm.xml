@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Apr 7, 2015 11:04:58 PM by Hibernate Tools 3.6.0 -->
+<hibernate-mapping>
+  <class catalog="bank" name="DataSource.AccountGateway" table="account">
+    <id name="aid" type="int">
+      <column name="aid"/>
+      <generator class="assigned"/>
+    </id>
+    <property name="type" type="string">
+      <column length="20" name="type" not-null="true"/>
+    </property>
+    <property name="amount" type="int">
+      <column name="amount" not-null="true"/>
+    </property>
+    <property name="creationDate" type="date">
+      <column length="10" name="creationDate" not-null="true"/>
+    </property>
+    <property name="uid" type="int">
+      <column name="uid" not-null="true"/>
+    </property>
+    <property name="cid" type="int">
+      <column name="cid" not-null="true"/>
+    </property>
+  </class>
+</hibernate-mapping>
